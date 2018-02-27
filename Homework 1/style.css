@@ -1,0 +1,73 @@
+body {
+    background: url(clouds.png) fixed;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    margin: 15px 0;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type = text] {
+    width: 100%;
+    padding: 12px 20px 12px 6px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #191970;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+    background-color: #4169E1;
+    color: white;
+    padding: 12px 20px 12px 6px;
+    margin: 8px 0;
+    border: 1px solid #191970;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+
+.form div select, .form div label, .form div input {
+    display: inline-block;
+    padding: 0 15px 0 15px;
+}
+
+.form div select, input[type = number] {
+    border: 1px solid #191970;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: #00008B;
+}
+
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .form div {
+        flex-direction: column;
+    }
+}

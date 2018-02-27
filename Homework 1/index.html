@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale = 1.0, user-scalable = no">
+    <title> Homework 1 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="services.js"></script>
+</head>
+<body>
+    <main>
+        <div class="services">
+            <div class="form">
+                <form>
+                    <label for="location"> Location: </label>
+                    <input id="location" type="text" name="location">
+                    <!--<input type="submit" value="Submit">-->
+
+                    <div>
+                        <label for="places"> Type of place: </label>
+                        <select id="places" name="places" size="1">
+                            <option value="bank"> Bank</option>
+                            <option value="cafe"> Cafe</option>
+                            <option value="church"> Church</option>
+                            <option value="gym"> Gym</option>
+                            <option value="hospital"> Hospital</option>
+                            <option value="museum"> Museum</option>
+                            <option value="park"> Park</option>
+                            <option value="night_club"> Night Club</option>
+                            <option value="police"> Police</option>
+                            <option value="restaurant"> Restaurant</option>
+                            <option value="school"> School</option>
+                            <option value="store"> Store</option>
+                            <option value="supermarket"> Supermarket</option>
+                        </select>
+
+                        <label for="radius"> Radius: </label>
+                        <input id="radius" type="number" name="radius" min="500" max="50000" value="1000">
+
+                        <label for="sunrise"> Sunrise </label>
+                        <input type="radio" checked id="sunrise" name="sun" value="sunrise">
+                        <label for="sunset"> Sunset </label>
+                        <input type="radio" id="sunset" name="sun" value="sunset">
+                    </div>
+                </form>
+                <button class="btn" onclick="run()"> Submit</button>
+            </div>
+
+            <div id="map"></div>
+        </div>
+    </main>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkSY7dmtRYYnjDzKZ7kbraco-yfxgVwUs&libraries=places&callback=initMap"></script>
+</body>
+</html>
