@@ -47,6 +47,10 @@ function run() {
                         ":" + data.results["sunset"].split(" ")[0].split(":")[1] + " " + data.results["sunset"].split(" ")[1]; // ora asfintitului fara secunde
                     console.log(sunset);
 
+                    // afisam cand rasare si cand apune soarele
+                    document.getElementById("sunrise_text").innerHTML = sunrise;
+                    document.getElementById("sunset_text").innerHTML = sunset;
+
                     let location = {lat: lat, lng: lng}; // obiect locatie pentru construirea hartii
 
                     // eliminare fostii markeri

@@ -71,3 +71,20 @@ input[type = text] {
         flex-direction: column;
     }
 }
+
+.ss {
+    z-index: 2;
+    position: absolute;
+    top: 38%;
+    left: 1.2%;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.rise, .set {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    padding-left: 10px;
+}
