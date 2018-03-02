@@ -5,7 +5,7 @@
 var map; // harta
 var markers = []; // markerele de pe harta
 
-function initMap() { // initializarea hartiis
+function initMap() { // initializarea hartii
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 47.161494, lng: 27.58405},
         zoom: 15
